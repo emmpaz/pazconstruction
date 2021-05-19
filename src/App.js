@@ -1,40 +1,13 @@
 import Navigation from './Navigation';
-
+import Cards from './Cards';
 
 function App() {
   return (
     <div>
       <Navigation/>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p><p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
-      <p>HI</p>
+      <Cards/>
+      <Cards/>
+      <Cards/>
     </div>
   );
 }
