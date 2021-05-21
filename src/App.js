@@ -6,8 +6,6 @@ function App() {
     <div>
       <Navigation/>
       <Cards/>
-      <Cards/>
-      <Cards/>
     </div>
   );
 }

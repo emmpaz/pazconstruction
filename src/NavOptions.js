@@ -7,15 +7,17 @@ const alignment = {
     justifyContent : 'space-between',
     margin: '0 auto',
     alignItems: 'center',
-    top: '50%',
+    top: '65%',
     msTransform : 'translateY(-50%)', 
     transform : 'translateY(-50%)'
     
 }
 
 const font = {
-    fontFamily : 'Century Gothic, CenturyGothic, Geneva, AppleGothic, sans-serif',
-    fontWeight: '500'
+    fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif', 
+    fontWeight: '50',
+    fontSize : '20px',
+    textTransform : 'lowercase'
 }
 
 class NavOptions extends React.Component {
@@ -27,10 +29,14 @@ class NavOptions extends React.Component {
                 <p>   
                 </p>
                 <h1 style={font}>
+                    <a target="_blank" href="#" style={{textDecoration : 'none', color:'black'}}>
                     Testimonies
+                    </a>
                 </h1>
                 <h1 style={font}>
+                    <a target="_blank" href="#" style={{textDecoration : 'none', color: 'black'}}>
                     Gallery
+                    </a>
                 </h1>
                 <p>
                 </p>
