@@ -10,7 +10,6 @@ const alignment = {
     top: '65%',
     msTransform : 'translateY(-50%)', 
     transform : 'translateY(-50%)'
-    
 }
 
 const font = {

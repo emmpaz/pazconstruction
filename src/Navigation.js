@@ -8,7 +8,8 @@ const stickyNav = {
     height : '150px',
     boxShadow : '0px 8px 20px black',
     top : '0',
-    display:'flex'
+    display:'flex',
+    zIndex : '100'
 }
 class Navigation extends React.Component {
 
