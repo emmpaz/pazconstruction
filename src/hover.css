@@ -1,0 +1,42 @@
+
+.testimony:link{
+    text-decoration : none;
+    color:black;
+}
+
+.testimony:visited{
+    color: black;
+}
+
+.testimony:hover {
+    color:#6b8799;
+    transition: 0.3s;
+}
+
+.gallery:link {
+    text-decoration : none;
+    color: black;
+}
+
+.gallery:visited{
+    color: black;
+}
+
+.gallery:hover {
+    color:#6b8799;
+    transition: 0.3s;
+}
+
+.facebook:link{
+    text-decoration: none;
+    color:white;
+}
+
+.facebook:visited{
+    color: white;
+}
+
+.facebook:hover{
+    color:#b3b6b8;
+    transition: 0.3s;
+}

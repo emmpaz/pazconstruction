@@ -4,6 +4,7 @@ import sec from './2.png';
 import third from './3.jpeg';
 import fourth from './four.jpg';
 
+
 const images = [
     first,
     sec,
@@ -12,7 +13,7 @@ const images = [
 ]
 
 const background = {
-    backgroundColor : '#556d7c',
+    backgroundColor : '#36454f',
     width :'100%',
     height : '500px',
     position : 'relative',
@@ -25,7 +26,8 @@ const imageC = {
     height: '70%',
     top : '10%',
     position : 'absolute',
-    zIndex : 3
+    zIndex : 3,
+    borderRadius : '7px'
 }
 
 const imageLeft = {
@@ -35,7 +37,8 @@ const imageLeft = {
     position : 'absolute',
     zIndex : 0,
     left : '15%',
-    filter : 'blur(9px)'
+    filter : 'blur(9px)',
+    borderRadius : '7px'
 }
 
 const imageRight = {
@@ -45,7 +48,8 @@ const imageRight = {
     position : 'absolute',
     zIndex : 0,
     left : '60%',
-    filter : 'blur(9px)'
+    filter : 'blur(9px)',
+    borderRadius : '7px'
 }
 const buttonStyle = {
     position : 'absolute',
@@ -71,9 +75,9 @@ class Carousel extends React.Component {
     render(){
         return(
             <div style={background}>
-                <img src={images[this.state.num % images.length]} style={imageLeft}></img>
-                <img src={images[(this.state.num + 1) % images.length]} style={imageC}></img>
-                <img src={images[(this.state.num + 2) % images.length]} style={imageRight}></img>
+                <img src={images[this.state.num % images.length]} style={imageLeft} alt='1'></img>
+                <img src={images[(this.state.num + 1) % images.length]} style={imageC} alt='2'></img>
+                <img src={images[(this.state.num + 2) % images.length]} style={imageRight} alt='3'></img>
                 <button style={buttonStyle} onClick={this.rotate}>BUTTOn</button>
             </div>
         );

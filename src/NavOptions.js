@@ -1,4 +1,5 @@
 import React from 'react';
+import './hover.css';
 
 const alignment = {
     position : 'absolute',
@@ -28,12 +29,12 @@ class NavOptions extends React.Component {
                 <p>   
                 </p>
                 <h1 style={font}>
-                    <a target="_blank" href="#" style={{textDecoration : 'none', color:'black'}}>
+                    <a target="_blank" href="#" className="testimony">
                     Testimonies
                     </a>
                 </h1>
                 <h1 style={font}>
-                    <a target="_blank" href="#" style={{textDecoration : 'none', color: 'black'}}>
+                    <a target="_blank" href="#" className="gallery">
                     Gallery
                     </a>
                 </h1>
