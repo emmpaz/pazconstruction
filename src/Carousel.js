@@ -1,15 +1,8 @@
-import React from 'react';
-import first from './images/broadway1.png';
-import sec from './images/broadway2.png';
-import third from './images/bathroom.png';
+import React from 'react'
 import {FiArrowRightCircle, FiArrowLeftCircle} from 'react-icons/fi';
 import './carousel.css';
+import {images} from './images';
 
-const images = [
-    first,
-    sec,
-    third,
-]
 
 
 const imageCenter = {
