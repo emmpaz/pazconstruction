@@ -1,7 +1,6 @@
 import React from 'react';
 
 const backgroundDiv = {
-    backgroundColor : '#36454f',
     height : '650px',
     width : '100%',
     display : 'flex',

@@ -1,7 +1,7 @@
 body {
     padding: 0; 
     margin: 0; 
-    background-color: #36454F;
+    background-image : linear-gradient(#36454f, #677a87);
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */

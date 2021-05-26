@@ -1,29 +1,20 @@
 import React from 'react';
-import first from './first.jpg';
-import sec from './2.png';
-import third from './3.jpeg';
-import fourth from './four.jpg';
-
+import first from './images/broadway1.png';
+import sec from './images/broadway2.png';
+import third from './images/bathroom.png';
+import {FiArrowRightCircle, FiArrowLeftCircle} from 'react-icons/fi';
+import './carousel.css';
 
 const images = [
     first,
     sec,
     third,
-    fourth
 ]
 
-const background = {
-    backgroundColor : '#36454f',
-    width :'100%',
-    height : '500px',
-    position : 'relative',
-    display : 'flex',
-    justifyContent : 'center',
-}
 
-const imageC = {
+const imageCenter = {
     objectFit: 'cover', 
-    height: '70%',
+    height: '60%',
     top : '10%',
     position : 'absolute',
     zIndex : 3,
@@ -32,29 +23,24 @@ const imageC = {
 
 const imageLeft = {
     objectFit: 'cover', 
-    height: '70%',
+    height: '60%',
     top : '15%',
     position : 'absolute',
     zIndex : 0,
-    left : '15%',
+    left : '10%',
     filter : 'blur(9px)',
     borderRadius : '7px'
 }
 
 const imageRight = {
     objectFit: 'cover', 
-    height: '70%',
+    height: '60%',
     top : '15%',
     position : 'absolute',
     zIndex : 0,
-    left : '60%',
+    right : '10%',
     filter : 'blur(9px)',
     borderRadius : '7px'
-}
-const buttonStyle = {
-    position : 'absolute',
-    top: '50%',
-    left : '75%'
 }
 
 
@@ -63,22 +49,34 @@ class Carousel extends React.Component {
         super(props);
 
         this.state = {
-            num : 0
+            num : 0,
+            length : images.length
         }
     }
-    rotate = () => {
+    next = () => {
         this.setState(prevState => ({
             num : prevState.num + 1
+        }))    
+    }
+
+    prev = () => {
+        this.setState(prevState => ({
+            num : (prevState.num === 0) ? this.state.length - 1 : prevState.num - 1
         }))
     }
     
     render(){
         return(
-            <div style={background}>
-                <img src={images[this.state.num % images.length]} style={imageLeft} alt='1'></img>
-                <img src={images[(this.state.num + 1) % images.length]} style={imageC} alt='2'></img>
-                <img src={images[(this.state.num + 2) % images.length]} style={imageRight} alt='3'></img>
-                <button style={buttonStyle} onClick={this.rotate}>BUTTOn</button>
+            <div className="background">
+                <FiArrowLeftCircle className="left-arrow" id="left" onClick={this.prev}/>
+                <FiArrowRightCircle className="right-arrow" id="right" onClick={this.next}/>
+                <div className="darken">
+                    <img src={images[this.state.num % images.length]} style={imageLeft} className="image-left" alt='1'></img>
+                </div>
+                <img src={images[(this.state.num + 1) % images.length]} style={imageCenter} className="image-center" id="center" alt='2'></img>
+                <div className="darken">
+                    <img src={images[(this.state.num + 2) % images.length]} style={imageRight} className="image-right" alt='3'></img>
+                </div>
             </div>
         );
     }

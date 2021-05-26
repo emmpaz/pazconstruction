@@ -1,0 +1,42 @@
+.background{
+    width :100%;
+    height : 600px;
+    position : relative;
+    display : flex;
+    justify-content : center;
+}
+
+.right-arrow{
+    z-index: 100;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    font-size: 2rem;
+}
+
+.left-arrow{
+    z-index: 100;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 2rem;
+}
+
+.darken{
+    background-color: black;
+    opacity: .5;
+}
+/*
+.image-left{
+
+}
+.image-center{
+}
+.image-right{
+    
+}
+*/
