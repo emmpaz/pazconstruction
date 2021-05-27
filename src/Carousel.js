@@ -61,8 +61,10 @@ class Carousel extends React.Component {
         return(
             <div className="background">
                 <CarouselHeader/>
-                <FiArrowLeftCircle className="left-arrow" id="left" onClick={this.prev}/>
-                <FiArrowRightCircle className="right-arrow" id="right" onClick={this.next}/>
+                <div className="grid">
+                    <FiArrowLeftCircle className="left-arrow" id="left" onClick={this.prev}/>
+                    <FiArrowRightCircle className="right-arrow" id="right" onClick={this.next}/>
+                </div>
                 <div className="darken">
                     <img src={images[this.state.num % images.length]} style={imageLeft} className="image-left" alt='1'></img>
                 </div>
