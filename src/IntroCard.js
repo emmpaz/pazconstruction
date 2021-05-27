@@ -1,7 +1,7 @@
 import React from 'react';
 
 const backgroundDiv = {
-    height : '650px',
+    height : '1000px',
     width : '100%',
     display : 'flex',
     justifyContent : 'center',
@@ -10,7 +10,7 @@ const backgroundDiv = {
 
 const name = {
     position: 'absolute',
-    top : '40%', 
+    top : '30%', 
     height : 'auto', 
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
     fontSize : '60px',
@@ -18,7 +18,7 @@ const name = {
 }
 const Licensed_bonded = {
     position : 'absolute',
-    top : '55%', 
+    top : '40%', 
     height : 'auto', 
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
     fontSize : '20px',
@@ -27,9 +27,9 @@ const Licensed_bonded = {
 
 const verse = {
     position : 'absolute',
-    top : '70%', 
+    top : '50%', 
     height : 'auto', 
-    width: '590px',
+    width: '35%',
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
     fontSize : '20px',
     color : '#f2f2f2'

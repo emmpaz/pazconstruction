@@ -18,8 +18,7 @@ class Navigation extends React.Component {
     render(){
         return(
                 <div style={stickyNav}>
-                    <img src={logo} alt="" style={{ objectFit: 'cover', height: '70%', marginLeft: 'auto', marginRight: 'auto', marginTop: '20px'}}/>
-                <NavOptions/>                
+                    <img src={logo} alt="" style={{ objectFit: 'cover', height: '70%', marginLeft: 'auto', marginRight: 'auto', marginTop: '20px'}}/>            
                 </div>
         );
     }

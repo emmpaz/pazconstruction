@@ -2,22 +2,21 @@ import React from 'react'
 import {FiArrowRightCircle, FiArrowLeftCircle} from 'react-icons/fi';
 import './carousel.css';
 import {images} from './images';
-
+import CarouselHeader from './CarouselHeader';
 
 
 const imageCenter = {
     objectFit: 'cover', 
-    height: '60%',
-    top : '10%',
+    height: '40%',
+    top : '30%',
     position : 'absolute',
     zIndex : 3,
     borderRadius : '7px'
 }
-
 const imageLeft = {
     objectFit: 'cover', 
-    height: '60%',
-    top : '15%',
+    height: '40%',
+    top : '35%',
     position : 'absolute',
     zIndex : 0,
     left : '10%',
@@ -27,8 +26,8 @@ const imageLeft = {
 
 const imageRight = {
     objectFit: 'cover', 
-    height: '60%',
-    top : '15%',
+    height: '40%',
+    top : '35%',
     position : 'absolute',
     zIndex : 0,
     right : '10%',
@@ -61,6 +60,7 @@ class Carousel extends React.Component {
     render(){
         return(
             <div className="background">
+                <CarouselHeader/>
                 <FiArrowLeftCircle className="left-arrow" id="left" onClick={this.prev}/>
                 <FiArrowRightCircle className="right-arrow" id="right" onClick={this.next}/>
                 <div className="darken">
