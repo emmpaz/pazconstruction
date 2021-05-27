@@ -41,16 +41,16 @@
 }
 
 .image-center {
-    object-fit: cover; 
-    height: 40%;
+    width: 40%;
+    height: auto;
     top : 30%;
     position : absolute;
     z-index : 3;
     border-radius : 7px
 }
 .image-left {
-    object-fit: cover; 
-    height: 40%;
+    width: 40%;
+    height: auto;
     top : 35%;
     position : absolute;
     z-index : 0;
@@ -60,25 +60,12 @@
 }
 
 .image-right{
-    object-fit: cover; 
-    height: 40%;
+    width: 40%;
+    height: auto;
     top : 35%;
     position : absolute;
     z-index : 0;
     right : 10%;
     filter : blur(9px);
     border-radius : 7px
-}
-
-@media (min-width: 2000px){
-
-    .image-center {
-        height: 30%;
-       }
-    .image-left {
-        height: 30%;
-    }
-    .image-right{
-        height: 30%;
-    }
 }
