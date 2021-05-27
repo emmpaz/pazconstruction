@@ -5,37 +5,6 @@ import {images} from './images';
 import CarouselHeader from './CarouselHeader';
 
 
-const imageCenter = {
-    objectFit: 'cover', 
-    height: '40%',
-    top : '30%',
-    position : 'absolute',
-    zIndex : 3,
-    borderRadius : '7px'
-}
-const imageLeft = {
-    objectFit: 'cover', 
-    height: '40%',
-    top : '35%',
-    position : 'absolute',
-    zIndex : 0,
-    left : '10%',
-    filter : 'blur(9px)',
-    borderRadius : '7px'
-}
-
-const imageRight = {
-    objectFit: 'cover', 
-    height: '40%',
-    top : '35%',
-    position : 'absolute',
-    zIndex : 0,
-    right : '10%',
-    filter : 'blur(9px)',
-    borderRadius : '7px'
-}
-
-
 class Carousel extends React.Component {
     constructor(props){
         super(props);
@@ -66,11 +35,11 @@ class Carousel extends React.Component {
                     <FiArrowRightCircle className="right-arrow" id="right" onClick={this.next}/>
                 </div>
                 <div className="darken">
-                    <img src={images[this.state.num % images.length]} style={imageLeft} className="image-left" alt='1'></img>
+                    <img src={images[this.state.num % images.length]}  className="image-left" alt='1'></img>
                 </div>
-                <img src={images[(this.state.num + 1) % images.length]} style={imageCenter} className="image-center" id="center" alt='2'></img>
+                <img src={images[(this.state.num + 1) % images.length]}  className="image-center" id="center" alt='2'></img>
                 <div className="darken">
-                    <img src={images[(this.state.num + 2) % images.length]} style={imageRight} className="image-right" alt='3'></img>
+                    <img src={images[(this.state.num + 2) % images.length]}  className="image-right" alt='3'></img>
                 </div>
             </div>
         );
