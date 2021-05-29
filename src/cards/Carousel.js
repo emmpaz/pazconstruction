@@ -1,5 +1,5 @@
 import React from 'react'
-import {FiArrowRightCircle, FiArrowLeftCircle, FiSliders} from 'react-icons/fi';
+import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 import '../css/carousel.css';
 import {images} from '../exports/images';
 import CarouselHeader from './CarouselHeader';
@@ -16,7 +16,7 @@ class Carousel extends React.Component {
     }
     next = () => {
         this.setState(prevState => ({
-            num : (prevState.num + 1 == images.length) ? 0 : prevState.num + 1
+            num : (prevState.num + 1 === images.length) ? 0 : prevState.num + 1
         }))    
     }
 
@@ -31,8 +31,8 @@ class Carousel extends React.Component {
             <div className="background">
                 <CarouselHeader/>
                 <div className="grid">
-                    <FiArrowLeftCircle className="left-arrow" id="left" onClick={this.prev}/>
-                    <FiArrowRightCircle className="right-arrow" id="right" onClick={this.next}/>
+                    <IoArrowBack className="left-arrow" id="left" onClick={this.prev}/>
+                    <IoArrowForward className="right-arrow" id="right" onClick={this.next}/>
                 </div>
                     {images.map((slide, index)=>{
                         return (

@@ -71,7 +71,7 @@ class Info extends React.Component {
                     </span>
                 </div>
                 <div>
-                    <a target="_blank" href="https://www.facebook.com/PAZ-Construction-Drywall-Inc-299476817419772" className="facebook" style={font}>facebook</a>
+                    <a href="https://www.facebook.com/PAZ-Construction-Drywall-Inc-299476817419772" className="facebook" style={font}>facebook</a>
                 </div>
             </div>
         );

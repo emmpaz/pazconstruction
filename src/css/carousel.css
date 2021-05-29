@@ -24,6 +24,11 @@
     display:flex;
 }
 
+.right-arrow:hover,  .left-arrow:hover{
+    color: #f2f2f2;
+    transition-duration: 1s;
+}
+
 .left-arrow{
     z-index: 99;
     cursor: pointer;

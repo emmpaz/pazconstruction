@@ -1,8 +1,8 @@
 /*
     EDIT THIS LIST FOR TESTIMONIES
     {
-      name : 'Anthony Cruz',
-      stars : 5, 
+      name : '',
+      stars : 0, 
       traits : "",
       message : ""
     },
@@ -13,8 +13,8 @@ export const testimonies = [
     {
       name : 'Anthony Cruz',
       stars : 5, 
-      traits : "",
-      message : ""
+      traits : "clean",
+      message : "hello"
     },
     {
        name : 'Isra Paz',

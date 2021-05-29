@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/testimony.css';
+import TestimonyCard from './TestimonyCard';
 import TestimonyHeader from './TestimonyHeader';
+import {testimonies} from '../exports/testimonyList';
 
 class Testimonies extends React.Component {
 
@@ -16,6 +18,7 @@ class Testimonies extends React.Component {
         return(
             <div className="background">
                 <TestimonyHeader/>
+                <TestimonyCard testimonies={testimonies}/>
             </div>
         )
     }
