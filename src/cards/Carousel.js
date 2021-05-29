@@ -1,7 +1,7 @@
 import React from 'react'
-import {FiArrowRightCircle, FiArrowLeftCircle} from 'react-icons/fi';
-import './carousel.css';
-import {images} from './images';
+import {FiArrowRightCircle, FiArrowLeftCircle, FiSliders} from 'react-icons/fi';
+import '../css/carousel.css';
+import {images} from '../exports/images';
 import CarouselHeader from './CarouselHeader';
 
 
@@ -16,7 +16,7 @@ class Carousel extends React.Component {
     }
     next = () => {
         this.setState(prevState => ({
-            num : prevState.num + 1
+            num : (prevState.num + 1 == images.length) ? 0 : prevState.num + 1
         }))    
     }
 
@@ -34,13 +34,15 @@ class Carousel extends React.Component {
                     <FiArrowLeftCircle className="left-arrow" id="left" onClick={this.prev}/>
                     <FiArrowRightCircle className="right-arrow" id="right" onClick={this.next}/>
                 </div>
-                <div className="darken">
-                    <img src={images[this.state.num % images.length]}  className="image-left" alt='1'></img>
-                </div>
-                <img src={images[(this.state.num + 1) % images.length]}  className="image-center" id="center" alt='2'></img>
-                <div className="darken">
-                    <img src={images[(this.state.num + 2) % images.length]}  className="image-right" alt='3'></img>
-                </div>
+                    {images.map((slide, index)=>{
+                        return (
+                            <div className={index === this.state.num ? 'slide active' : 'slide'} key={index}>
+                                {index === this.state.num && (<img src={slide} alt="slide" className="image-center"/>)}
+                            </div>
+                        )
+                    })}
+                   
+    
             </div>
         );
     }

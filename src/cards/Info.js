@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './images/logowhite.png';
-import './hover.css';
+import logo from '../images/logowhite.png';
+import '../css/hover.css';
 
 const background ={
     width : '100%',

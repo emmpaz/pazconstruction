@@ -1,5 +1,5 @@
-import Navigation from './Navigation';
-import Cards from './Cards';
+import Navigation from './cards/Navigation';
+import Cards from './cards/Cards';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './images/logoblack.png';
-import NavOptions from './NavOptions';
+import logo from '../images/logoblack.png';
+
 const stickyNav = {
     position : 'fixed',
     width : '100%',

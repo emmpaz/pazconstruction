@@ -1,5 +1,5 @@
 import React from 'react';
-import './hover.css';
+import '../css/hover.css';
 
 const alignment = {
     position : 'absolute',

@@ -2,6 +2,7 @@ import React from 'react';
 import IntroCard from './IntroCard';
 import Carousel from './Carousel';
 import Info from './Info';
+import Testimonies from './Testimonies';
 
 class Cards extends React.Component {
     render(){
@@ -9,6 +10,7 @@ class Cards extends React.Component {
             <div>
                 <IntroCard/>
                 <Carousel/>
+                <Testimonies/>
                 <Info/>
             </div>
         )

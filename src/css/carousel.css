@@ -35,37 +35,24 @@
     display:flex;
 }
 
-.darken{
-    background-color: black;
-    opacity: .5;
-}
-
 .image-center {
-    width: 40%;
+    width: 100%;
     height: auto;
-    top : 30%;
     position : absolute;
     z-index : 3;
-    border-radius : 7px
-}
-.image-left {
-    width: 40%;
-    height: auto;
-    top : 35%;
-    position : absolute;
-    z-index : 0;
-    left : 10%;
-    filter : blur(9px);
-    border-radius : 7px
+    border-radius : 7px;
 }
 
-.image-right{
-    width: 40%;
-    height: auto;
-    top : 35%;
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
     position : absolute;
-    z-index : 0;
-    right : 10%;
-    filter : blur(9px);
-    border-radius : 7px
+}
+
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    position : absolute;
+    width: 40%;
+    top : 30%;
 }
