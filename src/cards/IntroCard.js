@@ -12,13 +12,13 @@ const name = {
     position: 'absolute',
     top : '30%', 
     height : 'auto', 
-    fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
-    fontSize : '60px',
+    fontFamily: 'Crimson Text, serif', 
+    fontSize : '80px',
     color : '#f2f2f2'
 }
 const Licensed_bonded = {
     position : 'absolute',
-    top : '40%', 
+    top : '43%', 
     height : 'auto', 
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
     fontSize : '20px',

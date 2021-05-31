@@ -14,16 +14,15 @@ const positionWord = {
 }
 
 const font = {
-    fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
+    fontFamily: 'Crimson Text, serif', 
     fontWeight: '50',
     fontSize : '50px',
-    textTransform : 'lowercase',
+    textTransform : 'uppercase',
     color : '#f2f2f2',
 }
 
 const line = {
-    borderTop : '1px solid #f2f2f2',
-    width : '40%',
+    width : '50%',
 }
 
 class CarouselHeader extends React.Component {
