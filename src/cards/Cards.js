@@ -3,6 +3,7 @@ import IntroCard from './IntroCard';
 import Carousel from './Carousel';
 import Info from './Info';
 import Testimonies from './Testimonies';
+import Location from './Location';
 
 class Cards extends React.Component {
     render(){
@@ -11,6 +12,7 @@ class Cards extends React.Component {
                 <IntroCard/>
                 <Carousel/>
                 <Testimonies/>
+                <Location/>
                 <Info/>
             </div>
         )
