@@ -20,7 +20,10 @@ const font = {
 }
 
 const line = {
-    width : '40%',
+    width : '50%',
+    height: '.5px',
+    border : 'none',
+    backgroundColor : '#f2f2f2'
 }
 
 class TestimonyHeader extends React.Component {

@@ -22,6 +22,9 @@ const font = {
 
 const line = {
     width : '50%',
+    height: '.5px',
+    border : 'none',
+    backgroundColor : '#f2f2f2'
 }
 
 class LocationHeader extends React.Component{
