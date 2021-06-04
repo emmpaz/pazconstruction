@@ -2,11 +2,6 @@ import React from 'react';
 import logo from '../images/logowhite.png';
 import '../css/hover.css';
 
-const background ={
-    width : '100%',
-    height : '700px',
-    position : 'relative'
-}
 
 const image = {
     objectFit: 'cover', 
@@ -25,53 +20,45 @@ const linebreak = {
     top : '20%'
 }
 
-const email = {
+const emailBox = {
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
     fontSize : '20px',
     color : '#f2f2f2',
-    position: 'absolute',
-    top : '30%',
-    left : '35%'
+    marginRight : ' 6px',
 }
-const number = {
+const numberBox = {
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
-    fontSize : '20px',
+    fontSize : '30px',
     color : '#f2f2f2',
     position: 'absolute',
-    top: '40%',
-    left: '35%'
+    top: '39%',
 }
-const font = {
+const fontBox = {
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif',
-    position : 'absolute',
-    top : '50%',
-    left : '35%',
-    fontSize : '20px'
+    fontSize : '20px',
+    marginLeft : ' 6px',
 }
 
 class Info extends React.Component {
 
     render(){
         return(
-            <div style={background}>
+            <div className="backgroundInfo">
                 <div className="bottom logo">
                     <img src={logo} style={image} alt="1"></img>
                 </div>
-                <div className="line break">
-                    <span style={linebreak}></span>
+                <div style={emailBox}>
+                    <a href="mailto: constructionpaz@gmail.com" className="email">
+                        email
+                    </a>
                 </div>
-                <div className="email" style={email}>
-                    <span>
-                        constructionpaz@gmail.com
-                    </span>
+                <div style={numberBox}>
+                    <a href="tel:316-305-1306" className="number">
+                        316-305-1306
+                    </a>
                 </div>
-                <div className="number" style={number}>
-                    <span>
-                        (316) 305-1306
-                    </span>
-                </div>
-                <div>
-                    <a href="https://www.facebook.com/PAZ-Construction-Drywall-Inc-299476817419772" className="facebook" style={font}>facebook</a>
+                <div style={fontBox}>
+                    <a href="https://www.facebook.com/PAZ-Construction-Drywall-Inc-299476817419772" className="facebook">facebook</a>
                 </div>
             </div>
         );
