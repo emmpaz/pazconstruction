@@ -5,3 +5,21 @@
     display : flex;
     justify-content : center;
 }
+
+.testimony.active {
+    opacity: 1;
+    transition-duration: 1s;
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top : 40%;
+}
+
+.testimony{
+    opacity: 0;
+    transition-duration: 1s ease;
+    position: absolute;
+}

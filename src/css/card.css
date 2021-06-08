@@ -1,12 +1,4 @@
-.container{
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    top: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .arrows{
     width: 100%;
@@ -21,7 +13,7 @@
     user-select: none;
     font-size: 2rem;
     grid-column: 1;
-    justify-self: left;
+    justify-self: center;
     align-self: center;
     
 }
@@ -32,22 +24,42 @@
     user-select: none;
     font-size: 2rem;
     grid-column: 2;
-    justify-self: right;
+    justify-self: center;
     align-self: center;
 }
 
-.card{
-    width: 350px;
-    height: 150px;
-    border-radius: 10px;
-    background-color: black;
-    position: absolute;
-}
-
 .name{
-    color: white;
+    color: black;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     margin-top: 20px;  
     margin-left: 20px;
     display: inline-block;
+}
+
+.traits{
+    color: black;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    display: inline-block;
+    margin-left: 10px;
+    opacity: .5;
+    font-size: small;
+    
+}
+
+.traits.no.message{
+    color: black;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: medium;
+}
+
+.message{
+    color: black;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    display: inline-block;
+    margin-left: 50%;
+    margin-right:50%;
+    font-size: small;
 }

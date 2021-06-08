@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/card.css';
-import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 
 class TestimonyCard extends React.Component{
 
@@ -11,17 +10,18 @@ class TestimonyCard extends React.Component{
 
     render(){
         return(
-            <div className="container">
-                <div className="arrows">
-                    <IoArrowBack className="back"/>
-                    <IoArrowForward className="forward"/>
-                </div>
+            
                 <div className="card">
                     <span className="name">
-                        {this.props.testimonies[0].name}
+                        {this.props.testimonies.name}
                     </span>
+                    <hr/>
+                    <span className={this.props.testimonies.message.length === 0 ? "traits no message" : "traits"}>
+                        {this.props.testimonies.traits}
+                    </span>
+                    {this.props.testimonies.message.length > 1 ? <span className="message">"{this.props.testimonies.message}"</span> : null }
                 </div>
-            </div>
+         
         )
     }
 }
