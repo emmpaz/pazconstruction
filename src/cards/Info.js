@@ -3,23 +3,6 @@ import logo from '../images/logowhite.png';
 import '../css/hover.css';
 
 
-const image = {
-    objectFit: 'cover', 
-    height: '20%', 
-    position : 'absolute',
-    top:'30%',
-    left: '20%'
-}
-
-const linebreak = {
-    width:'1px',
-    position: 'absolute',
-    borderLeft : '3px solid white',
-    height: '300px',
-    left : '33%',
-    top : '20%'
-}
-
 const emailBox = {
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
     fontSize : '20px',
@@ -44,9 +27,6 @@ class Info extends React.Component {
     render(){
         return(
             <div className="backgroundInfo">
-                <div className="bottom logo">
-                    <img src={logo} style={image} alt="1"></img>
-                </div>
                 <div style={emailBox}>
                     <a href="mailto: constructionpaz@gmail.com" className="email">
                         email
