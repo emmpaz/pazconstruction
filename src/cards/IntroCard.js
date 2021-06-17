@@ -13,7 +13,7 @@ const name = {
     top : '30%', 
     height : 'auto', 
     fontFamily: 'Crimson Text, serif', 
-    fontSize : '80px',
+    fontSize : '5vw',
     color : '#f2f2f2'
 }
 const Licensed_bonded = {
@@ -21,7 +21,7 @@ const Licensed_bonded = {
     top : '43%', 
     height : 'auto', 
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
-    fontSize : '20px',
+    fontSize : '1.5vw',
     color : '#f2f2f2'
 }
 
@@ -31,8 +31,9 @@ const verse = {
     height : 'auto', 
     width: '35%',
     fontFamily: 'Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif', 
-    fontSize : '20px',
-    color : '#f2f2f2'
+    fontSize : '1.5vw',
+    color : '#f2f2f2',
+    textAlign : 'center'
 }
 
 class IntroCard extends React.Component{

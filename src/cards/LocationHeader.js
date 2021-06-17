@@ -15,7 +15,7 @@ const positionWord = {
 const font = {
     fontFamily: 'Crimson Text, serif', 
     fontWeight: '50',
-    fontSize : '50px',
+    fontSize : '4vw',
     textTransform : 'uppercase',
     color : '#f2f2f2',
 }
