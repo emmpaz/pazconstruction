@@ -42,7 +42,7 @@
 
 .image-center {
     width: 100%;
-    height: auto;
+    height:auto !important;
     position : absolute;
     z-index : 3;
     border-radius : 7px;
@@ -52,6 +52,8 @@
     opacity: 0;
     transition-duration: 1s ease;
     position : absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .slide.active{
@@ -59,6 +61,9 @@
     transition-duration: 1s;
     position : absolute;
     width: 40%;
-    top : 30%;
+    top: 50%;
+    height:428.172px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
