@@ -1,11 +1,13 @@
 import React from 'react';
-
+import back from '../images/hammer.jpg';
 const backgroundDiv = {
     height : '1000px',
     width : '100%',
     display : 'flex',
     justifyContent : 'center',
-    position: 'relative'
+    position: 'relative',
+    backgroundImage : `linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.93)),
+    url(${back})`
 }
 
 const name = {
@@ -39,22 +41,24 @@ const verse = {
 class IntroCard extends React.Component{
     render(){
         return(
-            <div style={backgroundDiv}>
-                <div style = {name}>
-                    <span>
-                        Paz Construction & Drywall, Inc
-                    </span>
-                </div>
-                <div style={Licensed_bonded}>
-                    <span>
-                        Your Roofing Experts &diams; Licensed & Bonded
-                    </span>
-                </div>
-                <div style={verse}>
-                    <span>
-                        "And whatever you do in word or deed,
-                        do all in the name of the Lord Jesus, giving thanks to God the Father through Him." - Col 3:17
-                    </span>
+            <div>
+                <div style={backgroundDiv}>
+                    <div style = {name}>
+                        <span>
+                            Paz Construction & Drywall, Inc
+                        </span>
+                    </div>
+                    <div style={Licensed_bonded}>
+                        <span>
+                            Your Roofing Experts &diams; Licensed & Bonded
+                        </span>
+                    </div>
+                    <div style={verse}>
+                        <span>
+                            "And whatever you do in word or deed,
+                            do all in the name of the Lord Jesus, giving thanks to God the Father through Him." - Col 3:17
+                        </span>
+                    </div>
                 </div>
             </div>
         );
