@@ -22,6 +22,7 @@
     justify-self: center;
     align-self: center;
     display:flex;
+    color: grey;
 }
 
 .right-arrow:hover,  .left-arrow:hover{
@@ -38,6 +39,7 @@
     justify-self: center;
     align-self: center;
     display:flex;
+    color: grey;
 }
 
 .image-center {
