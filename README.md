@@ -1,3 +1,6 @@
-Paz Construction & Drywall, Inc.
+This website is for Paz Construction & Drywall, Inc.
 
-Website under contruction.
+I used React and CSS.
+
+LIVE!
+https://pazconstruction.netlify.app/
